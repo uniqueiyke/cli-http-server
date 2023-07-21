@@ -43,7 +43,7 @@ If you want the server to serve any other file type other than .html file, then 
 | -p, --port <number> | The port on which the server serves the html file. (default: 9696) |
 | -o, --open <boolean> | Open a browser when the server start. Default true (default: true) |
 | -no-o, --no-open | Do not open a browser when the server start. |
-| -w, --watch <boolean> | If true, force the page to reload when file in the directory changes (default: true) |
+| -w, --watch <boolean> | watch for file change and refresh the browser after ward. (default: true) |
 | -no-w, --no-watch | If true, force the page to reload when file in the directory change |
 | -h, --help | display help for command |
 

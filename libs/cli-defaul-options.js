@@ -38,7 +38,7 @@ const defaultOptions = [
         dValue: true,
         alias: '-w',
         type: 'boolean',
-        description: 'If true, force the page to reload when file in the directory change'
+        description: 'watch for file change and refresh the browser after ward.'
     },
     {
         option: '--no-watch',
