@@ -1,5 +1,5 @@
 {
-  "name": "local-dev-server",
+  "name": "cli-http-server",
   "version": "1.2.0",
   "description": "A web development server to server local static contents. It a command line tool",
   "main": "bin/cli.js",
@@ -14,7 +14,7 @@
     "commander": "^11.0.0",
     "ws": "^8.13.0"
   },
-  "keywords": ["cli", "server", "serverlc", "web", "commander", "ws"],
+  "keywords": ["cli", "server", "serverlc", "http", "web", "commander", "ws"],
   "author": "Ikechukwu Ajike",
   "repository": {
     "type": "git",
