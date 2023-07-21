@@ -1,24 +1,24 @@
-# local-server
+# local-dev-server
 
 A local web  server is a command line application for serving static web pages on a local developmeant machine. It watches for file change and refresh your page.
 
 
 ## Installation
 
-`npm install local-server`
+`npm install local-dev-server`
 
 ## Usage
 Install the pa globally using the npm installation command
 
 ##### install via npm
-`npm i -g local-server`
+`npm i -g local-dev-server`
 
 ##### install via yarn
-`yarn add local-server`
+`yarn global add local-dev-server`
 
 require it in your file
 ```javascript
-const localServer = require('local-server');
+const localServer = require('local-dev-server');
 ```
 
 Start the server by cd to you project folder and running the command `serverlc` on the command line window.
