@@ -34,25 +34,25 @@ You can navigate to other pages by using the relative path to the file as the ur
 If you want the server to serve any other file type other than .html file, then you have to include the file extention as in `localhost:port/my-image.png` or `localhost:port/pgk.json`.
 
 ### cli options:
-  -v, --version          Print the app version
-  -d, --dir <string>     The full path to the directory 
+  -v, --version |          Print the app version
+  -d, --dir <string> |    The full path to the directory 
                          that contains your static assets (Default:
                          "C:/current/working/directory")
-  -i, --index <string>   The file name of the html file 
+  -i, --index <string> |  The file name of the html file 
                         to be served as the index (or root) file -
                          home page  by the server. Default index.html (Default: "index.html")
-  -p, --port <number>    The port on which the server 
+  -p, --port <number> |   The port on which the server 
                          serves the html file. (Default:
                          9696)
-  -o, --open <boolean>   Open a browser when the server 
+  -o, --open <boolean> |  Open a browser when the server 
                          start. (Default: true)
-  -no-o, --no-open       Do not open a browser when the 
+  -no-o, --no-open     |  Do not open a browser when the 
                          server start. value false
-  -w, --watch <boolean>  If true, force the page to 
+  -w, --watch <boolean> | If true, force the page to 
                          reload when file in the directory change  (Default: true)
-  -no-w, --no-watch      If true, force the page to 
+  -no-w, --no-watch    |  If true, force the page to 
                          reload when file in the directory change (value: false)
-  -h, --help             display help for command
+  -h, --help         |    display help for command
 
 
 
