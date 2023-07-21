@@ -8,7 +8,7 @@ A local web  server is a command line application for serving static web pages o
 `npm install local-dev-server`
 
 ## Usage
-Install the pa globally using the npm installation command
+Install the package globally using the npm installation command
 
 ##### install via npm
 `npm i -g local-dev-server`
