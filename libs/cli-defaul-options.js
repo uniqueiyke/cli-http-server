@@ -38,13 +38,13 @@ const defaultOptions = [
         dValue: true,
         alias: '-w',
         type: 'boolean',
-        description: 'watch for file change and refresh the browser after ward.'
+        description: 'Watch for file change and refresh the browser after ward.'
     },
     {
         option: '--no-watch',
         dValue: false,
         alias: '-no-w',
-        description: 'If true, force the page to reload when file in the directory change'
+        description: 'Disable browser resresh on file change.'
     },
 ]
 
