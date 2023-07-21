@@ -18,11 +18,11 @@
   "author": "Ikechukwu Ajike",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uniqueiyke/local-dev-server.git"
+    "url": "git+https://github.com/uniqueiyke/cli-http-server.git"
   },
   "bugs": {
-    "url": "https://github.com/uniqueiyke/local-dev-server/issues"
+    "url": "https://github.com/uniqueiyke/cli-http-server/issues"
   },
-  "homepage": "https://github.com/uniqueiyke/local-dev-server#readme",
+  "homepage": "https://github.com/uniqueiyke/cli-http-server#readme",
   "license": "MIT"
 }

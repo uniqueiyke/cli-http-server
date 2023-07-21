@@ -1,20 +1,20 @@
-# local-dev-server
+# cli-http-server
 
 A local web  server is a command line application for serving static web pages on a local developmeant machine. It watches for file change and refresh your page.
 
 
 ## Installation
 
-`npm install local-dev-server`
+`npm install cli-http-server`
 
 ## Usage
 Install the package globally using the npm installation command
 
 ##### install via npm
-`npm i -g local-dev-server`
+`npm i -g cli-http-server`
 
 ##### install via yarn
-`yarn global add local-dev-server`
+`yarn global add cli-http-server`
 
 Start the server by cd to you project folder and running the command `serverlc` on the command line window.
 
@@ -44,4 +44,4 @@ If you want the server to serve any other file type other than .html file, then 
 
 ## License
 License under the
-[MIT](https://github.com/uniqueiyke/local-dev-server/blob/main/LICENSE)
+[MIT](https://github.com/uniqueiyke/cli-http-server/blob/main/LICENSE)
