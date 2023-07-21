@@ -1,0 +1,28 @@
+{
+  "name": "local-dev-server",
+  "version": "1.2.0",
+  "description": "A web development server to server local static contents. It a command line tool",
+  "main": "bin/cli.js",
+  "type": "module",
+  "scripts": {
+    "start": "node bin/cli.js"
+  },
+  "bin": {
+    "serverlc": "bin/cli.js"
+  },
+  "dependencies": {
+    "commander": "^11.0.0",
+    "ws": "^8.13.0"
+  },
+  "keywords": ["cli", "server", "serverlc", "web", "commander", "ws"],
+  "author": "Ikechukwu Ajike",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uniqueiyke/local-dev-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/uniqueiyke/local-dev-server/issues"
+  },
+  "homepage": "https://github.com/uniqueiyke/local-dev-server#readme",
+  "license": "MIT"
+}
