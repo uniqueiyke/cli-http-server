@@ -16,11 +16,6 @@ Install the pa globally using the npm installation command
 ##### install via yarn
 `yarn global add local-dev-server`
 
-require it in your file
-```javascript
-const localServer = require('local-dev-server');
-```
-
 Start the server by cd to you project folder and running the command `serverlc` on the command line window.
 
 ### To Start Server
