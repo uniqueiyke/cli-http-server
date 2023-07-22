@@ -25,23 +25,27 @@ const errors = [
     }
 ]
 
-const parseError = err => {
-    if(err.code){
+const parseError = (err: any) => {
+    if (err.code !== undefined) {
         const errObj = errors.find(er => er.code === err.code);
+        if (!errObj)
+            return {
+                message: 'Unknown error',
+                statusCode: 403,
+                statusMessage: 'Unknown'
+            }
         return {
-        message: errObj.message ? errObj.message : 'Unknown error',
-        statusCode: errObj.statusCode,
-        statusMessage: errObj.statusMessage
+            message: (errObj.message) ? errObj.message : 'Unknown error',
+            statusCode: errObj.statusCode,
+            statusMessage: errObj.statusMessage
         }
     }
-    else{
-        return {
+    return {
         message: 'Unknown error',
         statusCode: 403,
         statusMessage: 'Unknown'
-        }
     }
 }
 
 
-export {errors, parseError};
+export { errors, parseError };

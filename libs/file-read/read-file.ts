@@ -1,21 +1,20 @@
 import fs from 'node:fs/promises';
 import { extname } from 'node:path';
-import cliOptionsParse from '../option-parser.js';
-import { parseOptvalue } from '../util-funcs.js';
+import cliOptionsParse from '../option-parser';
+import { parseOptvalue } from '../util-funcs';
 
-const readFileContent = async (filePath, option) => {
+const readFileContent = async (filePath: string) => {
     const opts = cliOptionsParse.opts();
-    let isToWatch = parseOptvalue(opts.watch);
-    isToWatch = (isToWatch === 'false' || isToWatch === false) ? false : true;
+    let isToWatch: boolean | string = parseOptvalue(opts.watch);
+    isToWatch = (!isToWatch || isToWatch === 'false') ? false : true;
     try {
         if(filePath.endsWith('client-script.js')) {
             const ws_port = parseInt(parseOptvalue(opts.wsport)) || parseInt(parseOptvalue(opts.port)) + 1;
-            const clientScriptBuf = await fs.readFile(filePath, option);
+            const clientScriptBuf = await fs.readFile(filePath);
             const clientScriptStr = clientScriptBuf.toString().replace(' = 9697', ` = ${ws_port}`)
             return Buffer.from(clientScriptStr);
-            // return Buffer.from(clientScript(ws_port));
         }
-        let fileContent = await fs.readFile(filePath, option);
+        let fileContent = await fs.readFile(filePath);
         if(isToWatch && (extname(filePath) === '.html' || extname(filePath) === '.htm')){
             const fileContentStr = fileContent
             .toString()

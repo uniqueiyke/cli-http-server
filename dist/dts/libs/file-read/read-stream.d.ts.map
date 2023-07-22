@@ -1,0 +1,1 @@
+{"version":3,"file":"read-stream.d.ts","sourceRoot":"","sources":["../../../../libs/file-read/read-stream.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,cAAc,EAAE,eAAe,EAAE,MAAM,MAAM,CAAC;AAEvD,QAAA,MAAM,UAAU,aAAc,MAAM,OAAO,eAAe,eAAe,CAAC,GAAG;IAAE,GAAG,EAAE,eAAe,CAAC;CAAE,kBAWrG,CAAA;AAED,eAAe,UAAU,CAAC"}

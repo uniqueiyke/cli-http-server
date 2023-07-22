@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const defaultOptions = [
     {
         option: '--dir',
@@ -15,7 +17,7 @@ const defaultOptions = [
     },
     {
         option: '--port',
-        dValue: 9696,
+        dValue: '9696',
         alias: '-p',
         type: 'number',
         description: 'The port on which the server serves the html file. Default 9696'
@@ -46,6 +48,6 @@ const defaultOptions = [
         alias: '-no-w',
         description: 'Disable browser resresh on file change.'
     },
-]
-
-export default defaultOptions;
+];
+exports.default = defaultOptions;
+//# sourceMappingURL=cli-defaul-options.js.map

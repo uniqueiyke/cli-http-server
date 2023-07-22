@@ -1,6 +1,6 @@
 # cli-http-server
 
-A local web  server is a command line application for serving static web pages on a local developmeant machine. It watches for file change and refresh your page.
+A local web server is a command line application for serving static web pages on a local developmeant machine. It watches for file change and refresh your page.
 
 
 ## Installation
@@ -33,7 +33,7 @@ If you want the server to serve any other file type other than .html file, then 
 | Option | Description |
 | -------- | ---------- |
 | -v, --version | Print the app version |
-| -d, --dir <string> | The full path to the directory that contains your static assets (default: C:/current/working/direcyoty) |
+| -d, --dir <string> | The full path to the directory that contains your static assets (default: C:/current/working/directory) |
 | -i, --index <string> | The file name of the html file to be served as the index (or root) file - home page  by the server. (default: index.html) |
 | -p, --port <number> | The port on which the server serves the html file. (default: 9696) |
 | -o, --open <boolean> | Open a browser when the server start. Default true (default: true) |

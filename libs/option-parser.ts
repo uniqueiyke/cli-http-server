@@ -1,10 +1,12 @@
 import { Command } from 'commander';
-import defaultOptions from './cli-defaul-options.js';
+import defaultOptions from './cli-defaul-options';
+import pkg from '../package.json'
+
 const cliOptionsParse = new Command();
 
 cliOptionsParse.name('Simple-local-web-server')
-    .description('Local web page server for web developement')
-    .version('1.0.0', '-v, --version', 'Print the app version')
+    .description(`${pkg.description}`)
+    .version(`${pkg.version}`, '-v, --version', 'Print the app version')
 
 
 for (const dOption of defaultOptions) {

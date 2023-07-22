@@ -1,0 +1,1 @@
+{"version":3,"file":"mime-type.d.ts","sourceRoot":"","sources":["../../../../libs/mime/mime-type.ts"],"names":[],"mappings":"AAAA,KAAK,KAAK,GAAG;IACT,GAAG,EAAE,MAAM,CAAC;IACZ,QAAQ,EAAE,MAAM,GAAG,MAAM,EAAE,CAAC;IAC5B,OAAO,EAAE,MAAM,CAAA;CAClB,CAAA;AAED,QAAA,MAAM,gBAAgB,EAAG;IAAC,CAAC,GAAG,EAAE,MAAM,GAAG,KAAK,CAAA;CA6X7C,CAAA;AAED,eAAe,gBAAgB,CAAC"}

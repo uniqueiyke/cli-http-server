@@ -3,7 +3,14 @@ import { watch } from 'node:fs/promises';
 import { extname } from 'node:path'
 
 class fileWatcher {
-    constructor(filePath, options, port, fileTypes) {
+    private __filePath: string;
+    private __options: any;
+    private __fileTypes: string[];
+    private __port: number;
+    private __allFiles: boolean;
+    private __watcherServer: any;
+
+    constructor(filePath: string, options: any, port: number, fileTypes: string[]) {
         this.__filePath = filePath;
         this.__options = options && options;
         this.__port = port || 9697;
@@ -25,7 +32,8 @@ class fileWatcher {
             console.dir(`watcher watching over ${this.__filePath}`);
             for await (const event of watcherEvents) {
                 if (event.eventType === 'change') {
-                    if (this.__allFiles || this.__fileTypes.includes(extname(event.filename))) {
+                    const filename : string|Buffer|null = event.filename;
+                    if (this.__allFiles || this.__fileTypes.includes(extname( filename !== null ? filename.toString('utf8') : '' ))) {
                         console.dir(`${event.filename} changed`);
                         console.log('Refreshing the page');
                         if (this.__watcherServer !== null) {
@@ -35,10 +43,6 @@ class fileWatcher {
                 }
             }
         } catch (err) {
-            if (err.name === 'AbortError') {
-                return console.log('Watching aborted')
-            }
-
             throw err;
         }
     };
@@ -49,12 +53,12 @@ class fileWatcher {
         });
 
         this.__watcherServer.on("reload", () => {
-            this.__watcherServer.clients.forEach((client) => {
+            this.__watcherServer.clients.forEach((client: { send: (arg0: string) => void; }) => {
                 client.send("RELOAD");
             });
         });
 
-        this.__watcherServer.on('error', error => {
+        this.__watcherServer.on('error', (error: { message: any; }) => {
             console.log(error.message)
         })
 
@@ -70,7 +74,7 @@ class fileWatcher {
 }
 
 
-const startWatcherServer = (filePath, options, port, fileTypes) => {
+const startWatcherServer = (filePath: string, options: undefined, port: number, fileTypes: string[]) => {
     new fileWatcher(filePath, options, port, fileTypes).startWatching()
 }
 

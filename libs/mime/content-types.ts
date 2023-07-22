@@ -1,6 +1,6 @@
-import extensionMimeMap from "./mime-type.js"
+import extensionMimeMap from "./mime-type";
 
-const contentType = (fileExt) => {
+const contentType = (fileExt: string) => {
     const xtm = extensionMimeMap[fileExt];
     if(xtm) {
         if(Array.isArray(xtm.mimeType)){
@@ -8,7 +8,6 @@ const contentType = (fileExt) => {
         }
         return xtm.mimeType
     }
-
     return 'text/html'
 }
 

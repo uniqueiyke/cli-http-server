@@ -1,0 +1,41 @@
+{
+    "name": "cli-http-server",
+    "version": "1.3.0",
+    "description": "A local web server is a command line application for serving static web pages on a local developmeant machine. It watches for file change and refresh your page.",
+    "main": "dist/js/bin/cli.js",
+    "type": "commonjs",
+    "types": "dist/dts/bin/cli.d.ts",
+    "scripts": {
+        "ts-compile": "tsc"
+    },
+    "bin": {
+        "serverlc": "dist/js/bin/cli.js"
+    },
+    "dependencies": {
+        "@types/node": "^20.4.2",
+        "commander": "^11.0.0",
+        "ws": "^8.13.0"
+    },
+    "keywords": [
+        "cli",
+        "server",
+        "serverlc",
+        "http",
+        "web",
+        "commander",
+        "ws"
+    ],
+    "author": "Ikechukwu Ajike",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/uniqueiyke/cli-http-server.git"
+    },
+    "bugs": {
+        "url": "https://github.com/uniqueiyke/cli-http-server/issues"
+    },
+    "homepage": "https://github.com/uniqueiyke/cli-http-server#readme",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/ws": "^8.5.5"
+    }
+}
